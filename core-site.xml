@@ -32,5 +32,11 @@
   </description>
 </property>
 
+<property>
+  <name>hadoop.tmp.dir</name>
+  <value>/tmp/hadoop-${user.name}</value>
+  <description>A base for other temporary directories.</description>
+</property>
+
 </configuration>
 
