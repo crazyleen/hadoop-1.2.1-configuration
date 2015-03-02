@@ -8,6 +8,7 @@
 <property>
   <name>mapred.job.tracker</name>
   <value>pc19.cluster.com:9001</value>
+  <final>true</final>
   <description>The host and port that the MapReduce job tracker runs
   at.  If "local", then jobs are run in-process as a single map
   and reduce task.
@@ -16,7 +17,7 @@
 
 <property>
   <name>mapred.child.java.opts</name>
-  <value>-Xmx256m</value>
+  <value>-Xmx400m</value>
   <description>Java opts for the task tracker child processes.  
   The following symbol, if present, will be interpolated: @taskid@ is replaced 
   by current TaskID. Any other occurrences of '@' will go unchanged.
@@ -27,6 +28,21 @@
   The configuration variable mapred.child.ulimit can be used to control the
   maximum virtual memory of the child processes. 
   </description>
+</property>
+
+<property>
+  <name>io.sort.factor</name>
+  <value>20</value>
+  <description>The number of streams to merge at once while sorting
+  files.  This determines the number of open file handles.</description>
+</property>
+
+<property>
+  <name>io.sort.mb</name>
+  <value>200</value>
+  <description>The total amount of buffer memory to use while sorting 
+  files, in megabytes.  By default, gives each merge stream 1MB, which
+  should minimize seeks.</description>
 </property>
 
 </configuration>
