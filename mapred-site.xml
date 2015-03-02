@@ -15,20 +15,17 @@
 </property>
 
 <property>
-  <name>mapred.map.tasks</name>
-  <value>2</value>
-  <description>The default number of map tasks per job.
-  Ignored when mapred.job.tracker is "local".  
-  </description>
-</property>
-
-<property>
-  <name>mapred.reduce.tasks</name>
-  <value>1</value>
-  <description>The default number of reduce tasks per job. Typically set to 99%
-  of the cluster's reduce capacity, so that if a node fails the reduces can 
-  still be executed in a single wave.
-  Ignored when mapred.job.tracker is "local".
+  <name>mapred.child.java.opts</name>
+  <value>-Xmx256m</value>
+  <description>Java opts for the task tracker child processes.  
+  The following symbol, if present, will be interpolated: @taskid@ is replaced 
+  by current TaskID. Any other occurrences of '@' will go unchanged.
+  For example, to enable verbose gc logging to a file named for the taskid in
+  /tmp and to set the heap maximum to be a gigabyte, pass a 'value' of:
+        -Xmx1024m -verbose:gc -Xloggc:/tmp/@taskid@.gc
+  
+  The configuration variable mapred.child.ulimit can be used to control the
+  maximum virtual memory of the child processes. 
   </description>
 </property>
 
