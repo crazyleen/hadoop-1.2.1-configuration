@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 HADOOP_CONF=/opt/hadoop-1.2.1/conf
 
