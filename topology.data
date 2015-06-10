@@ -1,16 +1,9 @@
-pc19.cluster.com	/fytri/dlrc/rack1
-pc15.cluster.com	/fytri/dlrc/rack1
-pc10.cluster.com	/fytri/dlrc/rack1
-pc05.cluster.com	/fytri/dlrc/rack1
-pc18.cluster.com	/fytri/dlrc/rack1
-pc01.cluster.com	/fytri/dlrc/rack1
-pc06.cluster.com	/fytri/dlrc/rack1
-pc02.cluster.com	/fytri/dlrc/rack1
-192.168.14.34 	/fytri/dlrc/rack1
-192.168.14.22 	/fytri/dlrc/rack1
-192.168.14.23 	/fytri/dlrc/rack1
-192.168.14.6 	/fytri/dlrc/rack1
-192.168.14.21 	/fytri/dlrc/rack1
-192.168.14.13 	/fytri/dlrc/rack1
-192.168.14.15 	/fytri/dlrc/rack1
-192.168.14.52 	/fytri/dlrc/rack1
+d0	/fytri/dlrc/rack1
+d1	/fytri/dlrc/rack1
+d2	/fytri/dlrc/rack1
+d3	/fytri/dlrc/rack1
+192.168.14.200 	/fytri/dlrc/rack1
+192.168.14.201 	/fytri/dlrc/rack1
+192.168.14.202 	/fytri/dlrc/rack1
+192.168.14.203	/fytri/dlrc/rack1
+

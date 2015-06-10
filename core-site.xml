@@ -7,7 +7,7 @@
 
 <property>
   <name>fs.default.name</name>
-  <value>hdfs://pc19.cluster.com:9000</value>
+  <value>hdfs://d0:9000</value>
   <final>true</final>
   <description>The name of the default file system.  A URI whose
   scheme and authority determine the FileSystem implementation.  The
