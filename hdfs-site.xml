@@ -5,7 +5,7 @@
 
 <configuration>
 <property>
-  <name>dfs.name.dir</name>
+  <name>dfs.namenode.name.dir</name>
   <value>/dfs/name</value>
   <final>true</final>
   <description>Determines where on the local filesystem the DFS name node
@@ -15,7 +15,7 @@
 </property>
 
 <property>
-  <name>dfs.data.dir</name>
+  <name>dfs.datanode.data.dir</name>
   <value>/dfs/data</value>
   <final>true</final>
   <description>Determines where on the local filesystem an DFS data node
