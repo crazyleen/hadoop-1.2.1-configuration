@@ -25,5 +25,9 @@
   buffered during read and write operations.</description>
 </property>
 
+<property>
+  <name>fs.trash.interval</name>
+  <value>1440</value>
+</property>
 </configuration>
 
