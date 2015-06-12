@@ -1,0 +1,12 @@
+#!/bin/sh
+#
+# This script will be executed *after* all the other init scripts.
+# You can put your own initialization stuff in here if you don't
+# want to do the full Sys V style init stuff.
+
+touch /var/lock/subsys/local
+
+#start hadoop cluster
+su dlrc -c '. /etc/profile.d/jdk.sh; . /etc/profile.d/hadoop.sh; start-dfs.sh'
+su dlrc -c '. /etc/profile.d/jdk.sh; . /etc/profile.d/hadoop.sh; start-yarn.sh'
+su dlrc -c '. /etc/profile.d/jdk.sh; . /etc/profile.d/hadoop.sh; mr-jobhistory-daemon.sh start historyserver'

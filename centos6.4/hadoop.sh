@@ -1,0 +1,3 @@
+export HADOOP_HOME=/opt/hadoop
+export HADOOP_PREFIX=$HADOOP_HOME
+PATH=$HADOOP_HOME/bin:$HADOOP_HOME/sbin:${PATH}
