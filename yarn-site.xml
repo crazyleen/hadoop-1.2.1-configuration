@@ -68,7 +68,7 @@
 
   <property>
     <name>yarn.scheduler.maximum-allocation-mb</name>
-    <value>8192</value>
+    <value>2048</value>
     <description>Maximum  limit of memory to allocate to each container request at the Resource Manager.NOTES:In MBs</description>
   </property>
 

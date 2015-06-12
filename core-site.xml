@@ -17,36 +17,12 @@
 </property>
 
 <property>
-  <name>hadoop.tmp.dir</name>
-  <value>/tmp/hadoop</value>
-  <final>true</final>
-  <description>A base for other temporary directories.</description>
-</property>
-
-<property>
   <name>io.file.buffer.size</name>
   <value>131072</value>
   <description>The size of buffer for use in sequence files.
   The size of this buffer should probably be a multiple of hardware
   page size (4096 on Intel x86), and it determines how much data is
   buffered during read and write operations.</description>
-</property>
-
-<property>
-  <name>topology.script.file.name</name>
-  <value>conf/topology-scripts.sh</value>
-  <description> The script name that should be invoked to resolve DNS names to
-    NetworkTopology names. Example: the script would take host.foo.bar as an
-    argument, and return /rack1 as the output.
-  </description>
-</property>
-
-<property>
-  <name>fs.trash.interval</name>
-  <value>60</value>
-  <description>Number of minutes between trash checkpoints.
-  If zero, the trash feature is disabled.
-  </description>
 </property>
 
 </configuration>
